@@ -1,0 +1,12 @@
+<%= form_for(@setting, url: admin_setting_path(@setting.var), method: 'patch') do |f| %>
+  <label><%= @setting.var %></label>
+  <%= f.text_area :value, rows: 10 %>
+  <%= f.submit %>
+  <div class="form-group">
+    <%= rucaptcha_input_tag(class: 'form-control', placeholder: '输入验证码') %>
+    <%= rucaptcha_image_tag(alt: '验证码，点击刷新') %>
+  </div>
+  <%= letter_avatar_tag('ksz2k', 240, class: 'av') %>
+  <%= letter_avatar_tag(Pinyin.t('王钧'), 240, class: 'av') %>
+  <%= image_tag(letter_avatar_url('ksz2k', 240)) %>
+<% end %>

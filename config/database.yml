@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: zhejiuban_production
-  username: zhejiuban
-  password: <%= ENV['ZHEJIUBAN_DATABASE_PASSWORD'] %>
+  # username: zhejiuban
+  # password: <%= ENV['ZHEJIUBAN_DATABASE_PASSWORD'] %>

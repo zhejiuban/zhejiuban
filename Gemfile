@@ -10,8 +10,11 @@ end
 gem 'rails', '~> 5.1.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
+gem 'pghero'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+# bootstrap
+# gem 'bootstrap-sass'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -32,6 +35,34 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# Redis
+# gem 'redis'
+# gem 'hiredis'
+# gem 'redis-namespace'
+# gem 'redis-objects'
+gem 'redis-rails'
+# Cache
+gem 'second_level_cache'
+# Setting
+gem 'rails-settings-cached'
+gem 'rack-attack'
+gem 'rails-i18n'
+
+# 上传组件
+gem 'carrierwave'
+# Aliyun / Upyun 可选项
+gem 'carrierwave-upyun'
+gem 'carrierwave-aliyun'
+# Lazy load
+gem 'mini_magick', require: false
+
+# 验证码，头像
+gem 'rucaptcha'
+gem 'letter_avatar'
+gem 'chinese_pinyin'
+
+# 表单
+gem 'simple_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
